@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<head>
+<title>Lindsay & Stephen</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet"> 
+</head>
+
+<style>
+h1 {
+	font-family: "Tangerine", serif
+}
+
+h2,h3,h4,h5,h6 {
+	font-family: "Satisfy", cursive
+}
+
+p {
+	font-family: "Pontano Sans", sans-serif
+}
+
+body, html {
+	height: 100%
+}
+
+.navbar-inverse {
+	background-color: #fff !important;
+	opacity: 0.75;
+	filter: alpha(opacity=75);
+	border-color: #fff;
+	background-image: none;
+	box-shadow: none;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	font-size: 20px;
+	color: #54251c;
+}
+
+.slide {
+	height: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.about-us-slide {
+	height: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.photos-slide {
+	height: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.joinus-slide {
+	height: 800px;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.registries-slide {
+	height: 250px;;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.content-box {
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	width: 80%;
+}
+
+.title {
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	width: 785px;
+	height: 50px;
+	margin-bottom: 5px;
+}
+
+.about-us-img {
+	display: block;
+	margin: auto;
+	position: relative;
+	width: 785px;
+	height: 490px;
+}
+
+.bgimg {
+	min-height: 100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.bgimg-1 {
+	background-image: url("http://desertsbestlandscaping.com/images/arizona-landscape-1.jpg")
+}
+
+.bgimg-2 {
+	background-image: url("redrocks2.jpg")
+}
+
+.bg-1 {
+	background-color: #ffffff;
+	color: #555555;
+}
+
+.bg-2 {
+	background-color: #6ea2ef;
+	color: #555555;
+}
+
+.bg-3 {
+	background-color: #e4ca9a;
+	color: #555555;
+}
+
+.panel {
+	border: 1px solid #54251c;
+	border-radius: 0 !important;
+	transition: box-shadow 0.5s;
+}
+
+.panel:hover {
+	box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+.panel-footer .btn:hover {
+	border: 1px solid #54251c;
+	background-color: #fff !important;
+	color: #54251c;
+}
+
+.panel-heading {
+	color: #fff !important;
+	background-color: #54251c !important;
+	padding: 5px;
+	border-bottom: 1px solid transparent;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.panel-footer {
+	background-color: white !important;
+}
+
+.wedding-column-1 {
+	float: left;
+	width: 50%;
+	padding: 15px;
+}
+
+.wedding-column-2 {
+	float: right;
+	width: 50%;
+	padding: 15px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media (max-width: 600px) {
+	.column-1, column-2 {
+		width: 100%;
+	}
+}
+
+.wedding-date-time-heading {
+	height: 50px;
+	margin: auto;
+	position: absolute;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	outline-color: #fff;
+}
+
+.wedding-date-time-map {
+	height: 450px;
+	margin: auto;
+	position: absolute;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	outline-color: #fff;
+}
+
+.button-div {
+	display: inline-block;
+	margin: auto;
+	position: absolute;
+	width: 785px;
+	height: 50px;
+	padding: 20px;
+}
+
+.img-padding-1 {
+	padding: 20px;
+	text-align: center;
+}
+
+.photo-gallery {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+</style>
+
+
+<body id="oursite" data-spy="scroll" data-target=".navbar">
+
+	
+	<div class="w3-bottom w3-hide-small">
+		<div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+			<a href="#home" style="width: 20" class="w3-bar=item w3-button">Home</a>
+			<a href="#thecouple" style="width: 20%" class="w3-bar-item w3-button">Lindsay & Stephen</a>
+			<a href="#joinus" style= "width: 20%" class="w3-bar-item w3-button">Join Us!</a>
+			<a href="#registries" style="width: 20%" class="w3-bar-item w3-button">Registries</a>
+			<a href="#rsvp" style="width: 20%" class="w3-bar-item w3-button" data-toggle="modal" data-target="#rsvp"><span class="glyphicon glyphicon-envelope"></span> RSVP</a>
+		</div>
+	</div>
+	
+	<header class="w3-display-container w3-wide bgimg bgimg-2 w3-grayscale-min" id="home">
+		<div class="w3-display-middle w3-text-white w3-center">
+			<h1 class="w3-jumbo">Lindsay & Stephen</h1>
+			<h1>Saturday November 3, 2018</h1>
+			<h1>ASU Kerr Cultural Center, Scottsdale, AZ</h1>
+		</div>
+	</header>
+	
+	<div id="thecouple" class="container-fluid slide bg-1">
+		<div class="content-box">
+			<div class="title text-center">
+			<h2>About Lindsay and Stephen</h2>
+			</div>
+			<div class="about-us-img">
+				<img src="shediaclobsterpicture.jpg" class="img-responsive img-thumbnail img-padding-1" alt="image">
+			</div>
+			<h4>Lindsay and Stephen met in November 2013 and have been inseparable ever since. She is … . He is … . The couple love … . They cannot wait to celebrate their big day with everyone!</h4>
+			<div>
+				<div class="img-padding-1"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#lindsayandstephen"><a href="photos.html">Photo Gallery</a></button></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="joinus" class="container-fluid joinus-slide bg-2">
+		<div class="content-box">
+			<div class="title text-center">
+				<h2>Join Us!</h2>
+			<div>
+				<h4>Please join us on Saturday November 3, 2018 at the <a href="https://asukerr.com/content/asu-kerr">ASU Kerr Cultural Center</a> in Scottsdale, Arizona.</h4>
+				<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#rsvp">Please RSVP</button>
+
+				  <div class="modal fade" id="rsvp" role="dialog">
+					<div class="modal-dialog modal-lg">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <button type="button" class="close" data-dismiss="modal">&times;</button>
+						  <h4 class="modal-title">RSVP for Our Wedding</h4>
+						</div>
+						<div class="modal-body">
+						  <form id="gform" method="post" role="form" action="https://script.google.com/macros/s/AKfycbwOjAR6r2GGxMe-YU3kdz0XdEM2pD3J1XTDAvm_p02o4fdqPQs/exec" class="inlineForm" enctype="multipart/form-data">
+							<div id="repeatingSection">
+								<div class="form-group">
+									<label for="firstname">First Name</label>
+										<input type="text" class="form-control" id="firstname" placeholder="First Name"/>
+								</div>
+								<div class="form-group">
+									<label for="lastname">Last Name</label>
+										<input type="text" class="form-control" id="lastname" placeholder="Last Name"/>
+								</div>
+								<div class="form-group">
+									<label for="email">Email</label>
+										<input type="email" class="form-control" id="email" placeholder="Email"/>
+								</div>
+								<div class="form-group">
+									<label for="additionalguests">Additional Guests</label>
+										<input type="textarea" class="form-control" id="additionalguests" placeholder="Additional Guests" style="height:100px">
+								</div>
+								<div class="form-group">
+									<label for="comments">Comments</label>
+										<input type="textarea" class="form-control" id="comments" placeholder="Comments" style="height:100px">
+								</div>
+							</div>
+							<input type="submit" value="Submit">
+						  </form>
+						</div>
+					  </div>
+					</div>
+				  </div>				
+			</div>
+			</div>
+			<div id="googleMap" style="width:100%; height:300px;">
+			</div>
+		</div>
+	</div>
+	
+	<div id="registries" class="container-fluid registries-slide bg-1 text-center">
+		<div class="content-box">
+			<div class="title text-center">
+				<h2>Registries</h2>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<span style="font-size: 2em;" class="glyphicon glyphicon-heart logo-small"></span>
+					<h3>Zola</h3>
+					<p>Contribute toward our honeymoon or a downpayment on our first home together!</p>
+					</br>
+					<p class="muted"><em>see also: 19th Century French Authors</em></p>
+				</div>
+				<div class="col-sm-4">
+					<span style="font-size: 2em;" class="glyphicon glyphicon-gift logo-small"></span>
+					<h3>Amazon</h3>
+					<p>Conglomo - We own you.</p>
+				</div>
+				<div class="col-sm-4">
+					<span style="font-size: 2em;" class="glyphicon glyphicon-heart logo-small"></span>
+					<h3>Bed, Bath & Beyoncé</h3>
+					<p>Any place or thing in the universe can be up to 104% perfect. That's how you got Beyoncé.</p>
+				</div>
+			</div>
+		</div>		
+	</div>
+	
+	<footer class="container-fluid text-center">
+		<a href="#home" title="To Top">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+		</a>
+		<p>This page designed and built by Stephen Lavery.</p>
+	</footer>
+	<div style="margin-bottom:64px"></div>
+	
+</body>
+
+<script>
+<!--Upon page load-->
+$(document).ready(function() {
+
+	<!--Smooth scrolling-->
+	$('body').scrollspy({target: ".navbar", offset: 50});
+	$("#myNavbar a").on('click', function(event) {
+		if (this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+			$('html.body').animate({
+				scrollTop: $(hash).offset().top
+			}, 800, function(){
+				window.location.hash = hash;
+			});
+		}
+	});
+
+	<!-- Google Map -->
+	function myMap() {
+	var mapProp= {
+		center:new google.maps.LatLng(33.525378,-111.927344),
+		zoom:5,
+	};
+	var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	}
+
+});
+</script>
+</html>
