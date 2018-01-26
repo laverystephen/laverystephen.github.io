@@ -313,23 +313,21 @@ body, html {
 				  </div>				
 			</div>
 			</div>
-			<div id="map" style="width:100%; height:500px;">
-			
+			<div id="map" style="width:100%;height:500px"></div>
+
 			<script>
-				function myMap() {
-				var myCenter = new google.maps.LatLng (33.525378,-111.927344);
-				var mapProp= {
-					center:myCenter, zoom:12, scrollwheel:false, draggable:false,
-					mapTypeId:google.maps.MapTypeId.ROADMAP
-				};
-				var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-				var marker = new google.maps.Marker({position:myCenter});
-				marker.setMap(map);
-				}
+			function myMap() {
+			  var myCenter = new google.maps.LatLng(33.525378,-111.927344);
+			  var mapCanvas = document.getElementById("map");
+			  var mapOptions = {center: myCenter, zoom: 5};
+			  var map = new google.maps.Map(mapCanvas, mapOptions);
+			  var marker = new google.maps.Marker({position:myCenter});
+			  marker.setMap(map);
+			}
 			</script>
-			<script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDP7BpAihurI6akoZdPwKsXfYSYDGdZg1U&callback=myMap">
-			</script>
-			</div>
+
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-AIzaSyDP7BpAihurI6akoZdPwKsXfYSYDGdZg1U&callback=myMap"></script>
+
 		</div>
 	</div>
 	
