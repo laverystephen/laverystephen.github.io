@@ -328,6 +328,11 @@ body, html {
 			  var map = new google.maps.Map(mapCanvas, mapOptions);
 			  var marker = new google.maps.Marker({position:myCenter});
 			  marker.setMap(map);
+			  
+			  var infowindow = new google.maps.InfoWindow({
+			  content: "ASU Kerr Cultural Center"
+			  });
+			  infowindow.open(map,marker);
 			}
 			</script>
 
