@@ -3,13 +3,13 @@
 <title>Lindsay & Stephen</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <style>
@@ -283,7 +283,7 @@ body, html {
 					  <div class="modal-content">
 						<div class="modal-header">
 						  <button type="button" class="close" data-dismiss="modal">&times;</button>
-						  <h1 class="modal-title" style="text-align:center;">RSVP for Our Wedding</h1>
+						  <h1 class="modal-title" style="text-align:center;">RSVP</h1>
 						</div>
 						<div class="modal-body">
 						  <form id="gform" method="post" role="form" action="https://script.google.com/macros/s/AKfycbwOjAR6r2GGxMe-YU3kdz0XdEM2pD3J1XTDAvm_p02o4fdqPQs/exec" class="inlineForm" enctype="multipart/form-data">
@@ -373,23 +373,25 @@ body, html {
 </body>
 
 <script>
-<!--Upon page load-->
-$(document).ready(function() {
+//upon page loading
+$(document).ready(function(){
 
-	<!--Smooth scrolling-->
-	$('body').scrollspy({target: ".navbar", offset: 50});
-	$("#myNavbar a").on('click', function(event) {
-		if (this.hash !== "") {
-			event.preventDefault();
-			var hash = this.hash;
-			$('html.body').animate({
-				scrollTop: $(hash).offset().top
-			}, 800, function(){
-				window.location.hash = hash;
-			});
-		}
-	});
+//smooth scrolling
+  $("a").on('click', function(event) {
 
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        window.location.hash = hash;
+      });
+    }
+  });
 });
 </script>
 </html>
