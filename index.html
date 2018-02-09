@@ -143,10 +143,32 @@ body, html {
 	background-color: white !important;
 }
 
+.row {
+	margin: 8px -16px;
+}
+
+.row, .row > .column {
+	padding: 8px;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+}
+
 .row:after {
 	content: "";
 	display: table;
 	clear: both;
+}
+
+.content {
+	background-color: white;
+	padding: 10px;
+}
+
+.show {
+	display: block;
 }
 
 @media (max-width: 600px) {
@@ -166,6 +188,10 @@ body, html {
 	height: auto;
 }
 
+.photo-caption {
+	text-align: center;
+}
+
 </style>
 
 
@@ -174,11 +200,12 @@ body, html {
 	<!-- Nav Bar -->
 	<div class="w3-bottom w3-hide-small">
 		<div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
-			<a href="#home" style="width: 34%" class="w3-bar=item w3-button">Back to Top</a>
-			<a href="#thecouple" style="width: 33%" class="w3-bar-item w3-button">Lindsay & Stephen</a>
-			<a href="#joinus" style= "width: 33%" class="w3-bar-item w3-button">Join Us!</a>
-			<!--<a href="#registries" style="width: 20%" class="w3-bar-item w3-button">Registries</a>-->
-			<!--<a href="#rsvp" style="width: 20%" class="w3-bar-item w3-button" data-toggle="modal" data-target="#rsvp"><span class="glyphicon glyphicon-envelope"></span> RSVP</a>-->
+			<a href="#home" style="width: 10%" class="w3-bar=item w3-button">Back to Top</a>
+			<a href="#thecouple" style="width: 16.67%" class="w3-bar-item w3-button">Lindsay & Stephen</a>
+			<a href="#engagement" style="width: 16.67%" class="w3-bar-item w3-button">The Engagement</a>
+			<a href="#joinus" style= "width: 16.67%" class="w3-bar-item w3-button">Join Us!</a>
+			<a href="#registries" style="width: 16.67%" class="w3-bar-item w3-button">Registries</a>
+			<a href="#rsvp" style="width: 16.67%" class="w3-bar-item w3-button" data-toggle="modal" data-target="#rsvp"><span class="glyphicon glyphicon-envelope"></span> RSVP</a>
 		</div>
 	</div>
 	
@@ -191,15 +218,62 @@ body, html {
 		</div>
 	</header>
 	
-	<!--  -->
+	<!-- About Us Section -->
 	<div id="thecouple" class="container-fluid slide bg-1">
 			<div class="title text-center">
 			<h1>About Lindsay and Stephen</h1>
 			</div>
 			<img src="engagement2.jpg" class="img-responsive img-thumbnail img-padding-1 about-us-img" alt="Stephen and Lindsay">
-			<p style="text-align:center;">Photo credit: IHNY Photography</p>
+			<p style="text-align:center;">photo: IHNY Photography</p>
 			<h5>Lindsay and Stephen met in November 2013 and have been inseparable ever since. She is … . He is … . The couple love … . They cannot wait to celebrate their big day with everyone!</h5>
 	</div>
+	
+	<!-- Engagement Photo Gallery -->
+	
+	<div id="engagement" class="title text-center">
+		<h1>The Engagement</h1>
+	</div>
+	<div class="row">
+		<div class="column engagement">
+			<div class="content">
+				<img src="engagement3.jpg" alt="photo3" style="width:100%" class="img-thumbnail">
+				<h4 class="photo-caption">Photo #3</h4>
+				<p class="photo-caption">Text</p>
+				<img src="engagement7.jpg" alt="photo7" style="width:100%" class="img-thumbnail">
+				<h4 class="photo-caption">Photo #7</h4>
+				<p class="photo-caption">Text</p>
+				<img src="engagement5.jpg" alt="photo5" style="width:100%" class="img-thumbnail">
+				<h4 class="photo-caption">Photo #5</h4>
+				<p class="photo-caption">Text</p>
+			</div>
+		</div>
+		<div class="column engagement">
+			<div class="content">
+				<img src="engagement6.jpg" alt="photo6" style="width:100%" class="img-thumbnail">
+				<h4 class="photo-caption">Photo #6</h4>
+				<p class="photo-caption">Text</p>
+				<img src="engagement4.jpg" alt="photo4" style="width:100%" class="img-thumbnail">
+				<h4 class="photo-caption">Photo #4</h4>
+				<p class="photo-caption">Text</p>
+			</div>
+		</div>
+		<div class="column engagement">
+			<div class="content">
+				<img src="engagement8.jpg" alt="photo8" style="width:100%" class="img-thumbnail">
+				<h4 class="photo-caption">Photo #8</h4>
+				<p class="photo-caption">Text</p>
+				<img src="engagement.jpg" alt="photo1" style="width:100%" class="img-thumbnail">
+				<h4 class="photo-caption">Photo #1</h4>
+				<p class="photo-caption">Text</p>
+				<img src="engagement2.jpg" alt="photo2" style="width:100%" class="img-thumbnail">
+				<h4 class="photo-caption">Photo #2</h4>
+				<p class="photo-caption">Text</p>
+			</div>
+		</div>
+	</div>
+	<p class="text-center">all photos: IHNY Photography</p>
+	
+	<!-- Join Us Section -->
 	
 	<div id="joinus" class="container-fluid joinus-slide bg-2">
 			<div class="title text-center">
@@ -207,7 +281,7 @@ body, html {
 			</div>
 			<div>
 				<h5 style="text-align:center;">Please join us on Saturday November 3, 2018 at the <a href="https://asukerr.com/content/asu-kerr">ASU Kerr Cultural Center</a> in Scottsdale, Arizona.</h5>
-				<h5 style="text-align:center;">More information and RSVPs coming soon!</h5>
+				<h5 style="text-align:center;">More details and RSVPs coming soon!</h5>
 				<!--<button type="button" class="btn btn-lg" data-toggle="modal" data-target="#rsvp">Please RSVP</button>-->
 
 				  <div class="modal fade" id="rsvp" role="dialog">
@@ -250,6 +324,9 @@ body, html {
 		</div>
 		</br>
 		</br>
+		
+		<!-- Google Map -->
+		
 		<div id="map" style="width:100%;height:500px"></div>
 
 			<script>
@@ -271,7 +348,9 @@ body, html {
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBN7vLYD5hArCGHBhAK_lhXuZhBzs8eqAI&callback=myMap"></script>
 	</div>
 	
-	<!--<div id="registries" class="container-fluid registries-slide bg-1 text-center">
+	<!-- Registries -->
+	
+	<div id="registries" class="container-fluid registries-slide bg-1 text-center">
 		<div class="content-box">
 			<div class="title text-center">
 				<h1>Registries</h1>
@@ -296,7 +375,7 @@ body, html {
 				</div>
 			</div>
 		</div>		
-	</div>-->
+	</div>
 	
 	<footer class="container-fluid text-center">
 		<a href="#home" title="To Top">
@@ -329,5 +408,6 @@ $(document).ready(function(){
     }
   });
 });
+
 </script>
 </html>
