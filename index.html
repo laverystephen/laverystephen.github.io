@@ -101,11 +101,11 @@ body, html {
 }
 
 .bgimg-1 {
-	background-image: url("engagement9.jpg")
+	background-image: url("engagement9.jpg");
 }
 
 .bgimg-2 {
-	background-image: url("redrocks2.jpg")
+	background-image: url("redrocks2.jpg");
 }
 
 .bg-1 {
@@ -220,7 +220,7 @@ body, html {
 	</header>
 	
 	<!-- About Us Section -->
-	<div id="thecouple" class="container-fluid slide bg-1">
+	<div id="thecouple" class="container-fluid bg-1">
 			<div class="title text-center">
 			<h1>About Lindsay and Stephen</h1>
 			</div>
@@ -231,48 +231,54 @@ body, html {
 	
 	<!-- Engagement Photo Gallery -->
 	
-	<div id="engagement" class="title text-center">
-		<h1>The Engagement</h1>
-	</div>
-	<div class="row">
-		<div class="column engagement">
-			<div class="content">
-				<img src="engagement3.jpg" alt="photo3" style="width:100%" class="img-thumbnail">
-				<h4 class="photo-caption">Photo #3</h4>
-				<p class="photo-caption">Text</p>
-				<img src="engagement7.jpg" alt="photo7" style="width:100%" class="img-thumbnail">
-				<h4 class="photo-caption">Photo #7</h4>
-				<p class="photo-caption">Text</p>
-				<img src="engagement5.jpg" alt="photo5" style="width:100%" class="img-thumbnail">
-				<h4 class="photo-caption">Photo #5</h4>
-				<p class="photo-caption">Text</p>
+	<div id="engagement" class="container-fluid">
+		<div class="title text-center">
+			<h1>The Engagement</h1>
+		</div>
+		<div class="row">
+			<!-- Top row of photos, including middle portrait-oriented photo -->
+			<div class="column engagement">
+				<div class="content">
+					<img src="engagement3.jpg" alt="photo3" style="width:100%" class="img-thumbnail">
+					<h4 class="photo-caption">Photo #3</h4>
+					<p class="photo-caption">Text</p>
+					<img src="engagement7.jpg" alt="photo7" style="width:100%" class="img-thumbnail">
+					<h4 class="photo-caption">Photo #7</h4>
+					<p class="photo-caption">Text</p>
+					<img src="engagement5.jpg" alt="photo5" style="width:100%" class="img-thumbnail">
+					<h4 class="photo-caption">Photo #5</h4>
+					<p class="photo-caption">Text</p>
+				</div>
+			</div>
+			<!-- Middle row of photos -->
+			<div class="column engagement">
+				<div class="content">
+					<img src="engagement6.jpg" alt="photo6" style="width:100%" class="img-thumbnail">
+					<h4 class="photo-caption">Photo #6</h4>
+					<p class="photo-caption">Text</p>
+					<img src="engagement4.jpg" alt="photo4" style="width:100%" class="img-thumbnail">
+					<h4 class="photo-caption">Photo #4</h4>
+					<p class="photo-caption">Text</p>
+				</div>
+			</div>
+			<!-- Bottom row of photos -->
+			<div class="column engagement">
+				<div class="content">
+					<img src="engagement8.jpg" alt="photo8" style="width:100%" class="img-thumbnail">
+					<h4 class="photo-caption">Photo #8</h4>
+					<p class="photo-caption">Text</p>
+					<img src="engagement.jpg" alt="photo1" style="width:100%" class="img-thumbnail">
+					<h4 class="photo-caption">Photo #1</h4>
+					<p class="photo-caption">Text</p>
+					<img src="engagement2.jpg" alt="photo2" style="width:100%" class="img-thumbnail">
+					<h4 class="photo-caption">Photo #2</h4>
+					<p class="photo-caption">Text</p>
+				</div>
 			</div>
 		</div>
-		<div class="column engagement">
-			<div class="content">
-				<img src="engagement6.jpg" alt="photo6" style="width:100%" class="img-thumbnail">
-				<h4 class="photo-caption">Photo #6</h4>
-				<p class="photo-caption">Text</p>
-				<img src="engagement4.jpg" alt="photo4" style="width:100%" class="img-thumbnail">
-				<h4 class="photo-caption">Photo #4</h4>
-				<p class="photo-caption">Text</p>
-			</div>
-		</div>
-		<div class="column engagement">
-			<div class="content">
-				<img src="engagement8.jpg" alt="photo8" style="width:100%" class="img-thumbnail">
-				<h4 class="photo-caption">Photo #8</h4>
-				<p class="photo-caption">Text</p>
-				<img src="engagement.jpg" alt="photo1" style="width:100%" class="img-thumbnail">
-				<h4 class="photo-caption">Photo #1</h4>
-				<p class="photo-caption">Text</p>
-				<img src="engagement2.jpg" alt="photo2" style="width:100%" class="img-thumbnail">
-				<h4 class="photo-caption">Photo #2</h4>
-				<p class="photo-caption">Text</p>
-			</div>
-		</div>
-	</div>
+	<!-- cite all photos -->
 	<p class="text-center">all photos: IHNY Photography</p>
+	</div>
 	
 	<!-- Join Us Section -->
 	
@@ -282,10 +288,12 @@ body, html {
 			</div>
 			<div>
 				<h4 style="text-align:center;">Please join us on Saturday November 3, 2018 at the <a href="https://asukerr.com/content/asu-kerr">ASU Kerr Cultural Center</a> in Scottsdale, Arizona.</h4>
-				<h4 style="text-align:center;">More details and RSVPs coming soon!</h4>
+				<h4 style="text-align:center;">Check back later for more details and RSVPs!</h4>
+				
 				<!--<button type="button" class="btn btn-lg" data-toggle="modal" data-target="#rsvp">Please RSVP</button>-->
 
-				  <div class="modal fade" id="rsvp" role="dialog">
+				<!-- RSVP form opens in modal -->
+				<div class="modal fade" id="rsvp" role="dialog">
 					<div class="modal-dialog modal-lg">
 					  <div class="modal-content">
 						<div class="modal-header">
@@ -293,6 +301,7 @@ body, html {
 						  <h1 class="modal-title" style="text-align:center;">RSVP</h1>
 						</div>
 						<div class="modal-body">
+						  <!-- RSVP form - includes POST method-->
 						  <form id="rsvpform" method="post" role="form" action="#" class="inlineForm" enctype="multipart/form-data">
 							<div id="repeatingSection">
 								<div class="form-group">
@@ -331,6 +340,7 @@ body, html {
 		<div id="map" style="width:100%;height:500px"></div>
 
 			<script>
+			// JavaScript for Google Map - center and place marker at ASU Kerr Cultural Center, zoom to show all of Phoenix area
 			function myMap() {
 			  var myCenter = new google.maps.LatLng(33.526324,-111.927800);
 			  var mapCanvas = document.getElementById("map");
@@ -346,12 +356,12 @@ body, html {
 			}
 			</script>
 
+			<!-- Map source - includes my Google Map JavaScript API key -->
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBN7vLYD5hArCGHBhAK_lhXuZhBzs8eqAI&callback=myMap"></script>
 	</div>
 	
-	<!-- Registries -->
-	
-	<div id="registries" class="container-fluid registries-slide bg-1 text-center">
+	<!-- Registries -->	
+	<div id="registries" class="container-fluid bg-1 registries-slide text-center">
 		<div class="content-box">
 			<div class="title text-center">
 				<h1>Registries</h1>
@@ -362,7 +372,7 @@ body, html {
 					<h4>Zola</h4>
 					<p>Contribute toward our honeymoon or a downpayment on our first home together!</p>
 					</br>
-					<p class="muted"><em>La vérité est en marche et rien ne l'arrêtera.</em></p>
+					<p class="muted"><em>Aimer, aimer ! et ce mot qu'elle ne prononçait pas, qui de lui-même vibrait en elle, l'étonnait et la faisait sourire.</em></p>
 				</div>
 				<div class="col-sm-4">
 					<span style="font-size: 2em;" class="glyphicon glyphicon-gift logo-small"></span>
@@ -378,6 +388,7 @@ body, html {
 		</div>		
 	</div>
 	
+	<!-- Footer -->
 	<footer class="container-fluid text-center">
 		<a href="#home" title="To Top">
 			<span class="glyphicon glyphicon-chevron-up"></span>
@@ -389,7 +400,7 @@ body, html {
 </body>
 
 <script>
-//upon page loading
+// onload
 $(document).ready(function(){
 
 //smooth scrolling
