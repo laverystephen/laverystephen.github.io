@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114682934-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114682934-1');
+</script>
 <title>Lindsay & Stephen</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -83,7 +92,8 @@ body, html {
 	position: relative;
 	width: 785px;
 	height: 50px;
-	margin-bottom: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .about-us-img {
@@ -120,6 +130,11 @@ body, html {
 
 .bg-3 {
 	background-color: #e4ca9a;
+	color: #555555;
+}
+
+.bg-4 {
+	background-color: #edeae8;
 	color: #555555;
 }
 
@@ -192,6 +207,69 @@ body, html {
 	text-align: center;
 }
 
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+}
+
+#caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	height: 150px;
+}
+
+.modal-content, #caption {
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+	from {transform:scale(0)}
+	to {transform:scale(1)}
+}
+
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+	.modal-content {
+		width: 100%;
+	}
+}
 </style>
 
 
@@ -212,6 +290,7 @@ body, html {
 	<!-- Top Frame -->
 	<header class="w3-display-container w3-wide bgimg bgimg-1" id="home">
 		<div class="w3-display-middle w3-text-white w3-center w3-responsive">
+			<!--<img class="img-responsive" src="headingtextwhite.png">-->
 			<h1 class="w3-jumbo">Lindsay & Stephen</h1>
 			<h1>Saturday November 3, 2018</h1>
 			<h1>ASU Kerr Cultural Center, Scottsdale, AZ</h1>
@@ -287,8 +366,8 @@ body, html {
 				<h1>We're Getting Married in Paradise (Valley)!</h1>
 			</div>
 			<div>
-				<h4 style="text-align:center;">Please join us on Saturday November 3, 2018 at the <a href="https://asukerr.com/content/asu-kerr">ASU Kerr Cultural Center</a> in Scottsdale, Arizona.</h4>
-				<h4 style="text-align:center;">Check back soon for more details and RSVPs!</h4>
+				<h4 style="text-align:center;">We hope you will join us on Saturday November 3, 2018 at the <a href="https://asukerr.com/content/asu-kerr">ASU Kerr Cultural Center</a> in Scottsdale, AZ.</h4>
+				<h4 style="text-align:center;">We will update this page with more details and information on how to RSVP as we get closer to the date. Please check back soon!</h4>
 			</div>				
 		
 		<!-- Google Map -->
