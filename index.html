@@ -351,6 +351,8 @@ img.hover-shadow {
 				<h1>About Lindsay and Stephen</h1>
 			</div>
 		</div>
+		
+		<!-- Image displays above text on mobile/tablet, to left of text on laptop/desktop -->
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
 				<img src="engagement10.jpg" class="img-thumbnail img-responsive" alt="Stephen and Lindsay">
@@ -381,6 +383,8 @@ img.hover-shadow {
 		<div class="col-xs-12 text-center">
 			<h5>Stephen proposed to Lindsay in April, 2017, at Oak Bridge in Central Park, NYC. Below is a selection of photos from the proposal. Enjoy!</h5>
 		</div>
+		
+		<!-- Images displayed on page, to open to lightbox -->
 		<div class="row">
 			<div class="column col-xs-4">
 				<span style="cursor:pointer"><img src="engagement3.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow img-responsive"></span>
@@ -409,6 +413,8 @@ img.hover-shadow {
 				<span style="cursor:pointer"><img src="engagement9.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow img-responsive"></span>
 			</div>
 		</div>
+		
+		<!-- Lightbox -->
 		<div id="engagementmodal" class="modal">
 			<span class="close cursor" onclick="closeModal()">&times;</span>
 			<div class="modal-content">
@@ -444,11 +450,17 @@ img.hover-shadow {
 					<div class="numbertext">8/8</div>
 					<img src="engagement9.jpg" style="width:100%">
 				</div>
+				
+				<!-- Previous/Next Controls -->
 				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				
+				<!-- Caption -->
 				<div class="caption-container">
 					<p id="caption"></p>
 				</div>
+				
+				<!-- Thumbnail Images Within Lightbox -->
 				<div class="row">
 					<div class="column col-xs-4">
 						<span style="cursor:pointer"><img class="demo img-responsive" src="engagement3.jpg" onclick="currentSlide(1)" alt="Engagement Photo"></span>
@@ -486,7 +498,7 @@ img.hover-shadow {
 		
 	<!-- Join Us Section -->
 	
-	<div id="joinus" class="container-fluid bg-2">
+	<div id="joinus" class="container-fluid bg-3">
 			<div class="col-xs-12 text-center">
 				<h1>We're Getting Married in Paradise (Valley)!</h1>
 			</div>
@@ -495,8 +507,7 @@ img.hover-shadow {
 				<h4 class="text-center">We will update this page with more details and information on how to RSVP as we get closer to the date. Please check back soon!</h4>
 			</div>				
 		
-		<!-- Google Map -->
-		
+		<!-- Google Map -->		
 		<div id="map" style="width:100%;height:500px"></div>
 
 			<script>
@@ -549,7 +560,7 @@ img.hover-shadow {
 	</div>-->
 	
 	<!-- Footer -->
-	<footer class="container-fluid text-center">
+	<footer class="container-fluid text-center bg-3">
 		<a href="#home" title="To Top">
 			<span class="glyphicon glyphicon-chevron-up"></span>
 		</a>
