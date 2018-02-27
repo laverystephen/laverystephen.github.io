@@ -14,9 +14,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -381,7 +379,7 @@ img.hover-shadow {
 			<h1>The Engagement</h1>
 		</div>
 		<div class="col-xs-12 text-center">
-			<h5>Stephen proposed to Lindsay in April, 2017, at Oak Bridge in Central Park, NYC. Below is a selection of photos from the proposal. Enjoy!</h5>
+			<h5>Stephen proposed to Lindsay in April, 2017, at Oak Bridge in Central Park, NYC. Here are some photos from the proposal. Enjoy!</h5>
 		</div>
 		
 		<!-- Images displayed on page, to open to lightbox -->
@@ -593,10 +591,12 @@ $(document).ready(function(){
   });
 });
 
+// opens the lightbox
 function openModal() {
 	document.getElementById('engagementmodal').style.display = "block";
 }
 
+// closes the lightbox
 function closeModal() {
 	document.getElementById('engagementmodal').style.display = "none";
 }
@@ -604,10 +604,12 @@ function closeModal() {
 var slideIndex = 1;
 showSlides(slideIndex);
 
+// controls navigation within the lightbox
 function plusSlides(n) {
 	showSlides(slideIndex += n);
 }
 
+// controls images
 function currentSlide(n) {
 	showSlides(slideIndex = n);
 }
