@@ -1,1 +1,0 @@
-SELECT * FROM testdb02032018.guests;
