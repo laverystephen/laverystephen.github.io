@@ -59,3 +59,10 @@ function showSlides(n) {
 	dots[slideIndex-1].className += " active";
 	captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+// Open links in a new tab
+function openWindow( url)
+{
+	window.open(url, '_blank');
+	window.focus();
+}

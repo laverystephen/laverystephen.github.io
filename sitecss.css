@@ -6,12 +6,8 @@ h2 {
 	font-weight: bold;
 }
 
-h3,h4,h5,h6 {
+h3,h4,h5,h6, p, panel-body {
 	font-family: 'Open Sans', sans-serif;
-}
-
-p {
-	font-family: "Raleway", sans-serif
 }
 
 body, html {
@@ -29,53 +25,16 @@ body, html {
 
 .navbar-inverse .navbar-nav>li>a {
 	font-size: 20px;
-	color: #54251c;
+	color: #008080;
 }
 
-.slide {
-	height: 100%;
-	position: relative;
-	margin: 0;
-	padding: 0;
-}
-
-.joinus-slide {
-	height: 800px;
-	position: relative;
-	margin: 0;
-	padding: 0;
-}
-
-.registries-slide {
-	height: 250px;;
-	position: relative;
-	margin: 0;
-	padding: 0;
-}
-
-.content-box {
-	position: absolute;
-	top: 5%;
-	left: 10%;
-	width: 80%;
+.nav-pills li.active a {
+	background-color: #008080;
 }
 
 .title {
-	display: block;
-	margin: 0 auto;
-	position: relative;
-	width: 785px;
-	height: 50px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-.about-us-img {
-	display: block;
-	margin: auto;
-	position: relative;
-	width: 720px;
-	height: 480px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 }
 
 .bgimg {
@@ -95,7 +54,7 @@ body, html {
 }
 
 .bg-2 {
-	background-color: #96c4d7;
+	background-color: #008080;
 	color: #555555;
 }
 
@@ -109,23 +68,60 @@ body, html {
 	color: #555555;
 }
 
+.bg-5 {
+	background-color: #faa7a6;
+	color: #555555;
+}
+
+.bg-6 {
+	background-color: #5b99a4;
+	color: #555555;
+}
+
+.bg-7 {
+	background-color: #d3d3d3;
+	color: #555555;
+}
+
+.bg-8 {
+	background-color: #a6f9fa;
+	color: #555555;
+}
+
+a:link, a:visited {
+	color: #f88379;
+	text-decoration: underline;
+}
+
+a:hover, a:active {
+	color: #008080;
+	text-decoration: underline;
+}
+
+.shadow {
+	box-shadow: 0px 5px 25px 0px #36454f;
+}
+
+@media (min-width: 700px) {
+.equal {
+	display: -webkit-flex;
+	display: flex;
+	}
+}
+
 .panel {
-	border: 1px solid #54251c;
+	border: 1px solid #000;
 	border-radius: 0 !important;
 	transition: box-shadow 0.5s;
+	width: 100%;
+	height: 100%;
 }
 
 .panel:hover {
 	box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
 
-.panel-footer .btn:hover {
-	border: 1px solid #54251c;
-	background-color: #fff !important;
-	color: #54251c;
-}
-
-.panel-footer {
+.panel > .panel-footer {
 	background-color: white !important;
 }
 
@@ -148,36 +144,6 @@ body, html {
 	clear: both;
 }
 
-.content {
-	background-color: white;
-	padding: 10px;
-}
-
-.show {
-	display: block;
-}
-
-@media (max-width: 600px) {
-	.column-1, column-2 {
-		width: 100%;
-	}
-}
-
-.img-padding-1 {
-	padding: 20px;
-	text-align: center;
-}
-
-.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-	display: block;
-	width: 100%;
-	height: auto;
-}
-
-.photo-caption {
-	text-align: center;
-}
-
 .modal {
 	display: none;
 	position: fixed;
@@ -188,8 +154,7 @@ body, html {
 	width: 100%;
 	height: 100%;
 	overflow: auto;
-	background-color: rgb(0,0,0);
-	background-color: rgba(0,0,0,0.9);
+	background-color: #36454f;
 }
 
 .modal-content {
@@ -287,4 +252,11 @@ img.hover-shadow {
 	.modal-content {
 		width: 100%;
 	}
+}
+
+.sectionborder {
+	border-width: 5px;
+	border-top-style: dotted;
+	border-top-color: #008080;
+	top: 30px;
 }
